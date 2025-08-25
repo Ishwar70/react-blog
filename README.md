@@ -1,12 +1,33 @@
-# React + Vite
+# 📝 React Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive blog application built with **React + Vite**.  
+The project includes a **Home** section and a **Blog** section, designed with a clean UI and responsive layout for all devices.
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [React Blog](https://react-blog-navy-eight.vercel.app/)  
+💻 **GitHub Repo:** [React Blog Code](https://github.com/Ishwar70/react-blog)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Built with **React + Vite** for fast development
+- 📱 **Fully Responsive** – works on desktop, tablet, and mobile
+- 🏠 **Home Page** – landing page with blog highlights
+- 📚 **Blog Section** – displays blog posts with details
+- 🎨 Modern UI with clean and minimal styling
+- 🌐 Deployed on **Vercel**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite
+- **Styling:** CSS / Tailwind (if used, mention here)
+- **Deployment:** Vercel
+
+---
+
+```bash
+git clone https://github.com/Ishwar70/react-blog.git
+cd react-blog
+
