@@ -7,17 +7,23 @@ import BlogList from "./pages/BlogList";
 import BlogDetails from "./pages/BlogDetails";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
+  const [theme, setTheme] = useState("light");
   useEffect(() => {
-    if (darkMode) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
-  }, [darkMode]);
+    const html = document.documentElement;
+    html.classList.remove("light", "dark", "bright");
+    html.classList.add(theme);
+  }, [theme]);
 
   return (
     <Router>
-      <div className="bg-white dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white transition-colors duration-300">
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <div
+        className={`min-h-screen transition-colors duration-300
+          ${theme === "light" ? "bg-white text-gray-900" : ""}
+          ${theme === "dark" ? "bg-gray-900 text-white" : ""}
+          ${theme === "bright" ? "bg-yellow-50 text-gray-900" : ""}`}
+      >
+        <Header theme={theme} setTheme={setTheme} />
+
         <main className="pt-20 px-4 md:px-8 lg:px-16">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,6 +31,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogDetails />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
     </Router>
